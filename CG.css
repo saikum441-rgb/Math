@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Fredoka', cursive, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-container {
+    background: #ffffff;
+    padding: 30px 40px;
+    border-radius: 25px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    width: 380px;
+    border: 5px solid #ff6f61;
+}
+
+h1 {
+    color: #ff6f61;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.screen {
+    display: none;
+}
+
+.screen.active {
+    display: block;
+}
+
+.welcome-text, .fail-message {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.btn {
+    background-color: #4cd137;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(76, 209, 55, 0.4);
+    transition: transform 0.1s ease, background-color 0.2s;
+}
+
+.btn:hover {
+    background-color: #44bd32;
+    transform: scale(1.05);
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.game-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.score-board {
+    color: #0097e6;
+}
+
+.timer-board {
+    color: #e84118;
+}
+
+.question-box {
+    background-color: #fbc531;
+    color: #2f3640;
+    font-size: 36px;
+    font-weight: 600;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: inset 0 -4px 0 rgba(0,0,0,0.1);
+}
+
+input[type="number"] {
+    width: 80%;
+    padding: 12px;
+    font-size: 22px;
+    text-align: center;
+    border: 3px solid #718093;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    outline: none;
+    color: #2f3640;
+}
+
+input[type="number"]:focus {
+    border-color: #0097e6;
+}
+
+.fail-emoji {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+#fail-screen h2 {
+    color: #e84118;
+    margin-bottom: 10px;
+}
+
+#final-score-text {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2f3640;
+    margin-bottom: 10px;
+}

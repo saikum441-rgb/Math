@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Math Kids Game</title>
+    <link rel="stylesheet" href="CG.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="game-container">
+        <h1>🌟 Math Magic Adventure! 🌟</h1>
+
+        <!-- Start Screen -->
+        <div id="start-screen" class="screen active">
+            <p class="welcome-text">Ready to test your super math powers?</p>
+            <button id="start-btn" class="btn">Start Game 🚀</button>
+        </div>
+
+        <!-- Quiz Screen -->
+        <div id="quiz-screen" class="screen">
+            <div class="game-info">
+                <div class="score-board">Score: <span id="score">0</span></div>
+                <div class="timer-board">⏱️ Time: <span id="time-left">10</span>s</div>
+            </div>
+            
+            <div class="question-box">
+                <span id="question-text">5 + 3 = ?</span>
+            </div>
+            <input type="number" id="answer-input" placeholder="Enter answer" autocomplete="off">
+            <button id="submit-btn" class="btn">Submit Answer ⭐</button>
+        </div>
+
+        <!-- Game Over / Fail Screen -->
+        <div id="fail-screen" class="screen">
+            <div class="fail-emoji">😢</div>
+            <h2>Oopsie! Time's up or wrong answer!</h2>
+            <p id="final-score-text">Your final score: <span id="end-score">0</span></p>
+            <p class="fail-message">Don't worry, even math wizards make mistakes! Keep practicing!</p>
+            <button id="try-again-btn" class="btn">Try Again 🔄</button>
+        </div>
+    </div>
+
+    <script src="CG.js"></script>
+</body>
+</html>
